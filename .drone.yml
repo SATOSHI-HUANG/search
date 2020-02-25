@@ -19,7 +19,7 @@ steps:
   image: plugins/gh-pages
   settings:
     username:
-      from_secret: SATOSHI-HUANG
+      from_secret: 199103044a3e5d69be62
     password:
-      from_secret: 89a5fa38ba65d9eebeb14e78d2555be1ea9757a1
+      from_secret: a2408bc2378d3acbc4b2981c84427efb739e5e65
     pages_directory: dist
