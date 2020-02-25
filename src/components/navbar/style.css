@@ -1,0 +1,111 @@
+/*** header  ***/
+
+header {
+    width: 100%;
+    height: 69px;
+    background-color: #7828B4;
+    display: flex;
+}
+
+header h1 {
+    color: #fff;
+    margin: auto;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*** search  ***/
+
+.search {
+    width: 100%;
+    height: 55px;
+    background-color: #EBEBEB;
+    box-sizing: border-box;
+    padding: 15px 9.7%;
+    box-shadow: 0 5px 10px 0 #D7D7D7;
+}
+
+.search input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    text-indent: 35px;
+    font-size: 20px;
+    outline: none;
+}
+
+.search label {
+    position: relative;
+}
+
+.search label::before {
+    content: "\f002";
+    font-family: "FontAwesome";
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (min-width: 767px) {
+    .head {
+        display: flex;
+    }
+
+    .head header {
+        width: 39.1%;
+    }
+
+    .head .search {
+        width: 60.9%;
+        height: auto;
+        background-color: #7828B4;
+        box-shadow: none;
+        padding: 20px 5.2%;
+        box-sizing: border-box;
+    }
+
+    .head .search input {
+        width: 100%;
+    }
+
+    .head .search input::placeholder {
+        color: #778899;
+    }
+
+    .head .search label::before {
+        color: white;
+    }
+
+    .head .search input {
+        color: white;
+        border-bottom-color: white;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    /*** navbar ***/
+
+    .navbar {
+        width: 100%;
+        height: 69px;
+        background-color: #7828B4;
+        display: flex;
+    }
+
+    .head {
+        width: 100%;
+        max-width: 1440px;
+        margin: auto;
+    }
+
+    .head header {
+        width: 25%;
+    }
+
+    .head .search {
+        width: 75%;
+    }
+}
