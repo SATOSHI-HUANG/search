@@ -1,0 +1,206 @@
+    {
+        "CityName": "高雄市",
+        "CityEngName": "Kaohsiung City",
+        "AreaList": [
+            {
+                "ZipCode": "800",
+                "AreaName": "新興區",
+                "AreaEngName": "Xinxing Dist."
+            },
+            {
+                "ZipCode": "801",
+                "AreaName": "前金區",
+                "AreaEngName": "Qianjin Dist."
+            },
+            {
+                "ZipCode": "802",
+                "AreaName": "苓雅區",
+                "AreaEngName": "Lingya Dist."
+            },
+            {
+                "ZipCode": "803",
+                "AreaName": "鹽埕區",
+                "AreaEngName": "Yancheng Dist."
+            },
+            {
+                "ZipCode": "804",
+                "AreaName": "鼓山區",
+                "AreaEngName": "Gushan Dist."
+            },
+            {
+                "ZipCode": "805",
+                "AreaName": "旗津區",
+                "AreaEngName": "Qijin Dist."
+            },
+            {
+                "ZipCode": "806",
+                "AreaName": "前鎮區",
+                "AreaEngName": "Qianzhen Dist."
+            },
+            {
+                "ZipCode": "807",
+                "AreaName": "三民區",
+                "AreaEngName": "Sanmin Dist."
+            },
+            {
+                "ZipCode": "811",
+                "AreaName": "楠梓區",
+                "AreaEngName": "Nanzi Dist."
+            },
+            {
+                "ZipCode": "812",
+                "AreaName": "小港區",
+                "AreaEngName": "Xiaogang Dist."
+            },
+            {
+                "ZipCode": "813",
+                "AreaName": "左營區",
+                "AreaEngName": "Zuoying Dist."
+            },
+            {
+                "ZipCode": "814",
+                "AreaName": "仁武區",
+                "AreaEngName": "Renwu Dist."
+            },
+            {
+                "ZipCode": "815",
+                "AreaName": "大社區",
+                "AreaEngName": "Dashe Dist."
+            },
+            {
+                "ZipCode": "817",
+                "AreaName": "東沙群島",
+                "AreaEngName": "Dongsha Islands"
+            },
+            {
+                "ZipCode": "819",
+                "AreaName": "南沙群島",
+                "AreaEngName": "Nansha Islands"
+            },
+            {
+                "ZipCode": "820",
+                "AreaName": "岡山區",
+                "AreaEngName": "Gangshan Dist."
+            },
+            {
+                "ZipCode": "821",
+                "AreaName": "路竹區",
+                "AreaEngName": "Luzhu Dist."
+            },
+            {
+                "ZipCode": "822",
+                "AreaName": "阿蓮區",
+                "AreaEngName": "Alian Dist."
+            },
+            {
+                "ZipCode": "823",
+                "AreaName": "田寮區",
+                "AreaEngName": "Tianliao Dist."
+            },
+            {
+                "ZipCode": "824",
+                "AreaName": "燕巢區",
+                "AreaEngName": "Yanchao Dist."
+            },
+            {
+                "ZipCode": "825",
+                "AreaName": "橋頭區",
+                "AreaEngName": "Qiaotou Dist."
+            },
+            {
+                "ZipCode": "826",
+                "AreaName": "梓官區",
+                "AreaEngName": "Ziguan Dist."
+            },
+            {
+                "ZipCode": "827",
+                "AreaName": "彌陀區",
+                "AreaEngName": "Mituo Dist."
+            },
+            {
+                "ZipCode": "828",
+                "AreaName": "永安區",
+                "AreaEngName": "Yong’an Dist."
+            },
+            {
+                "ZipCode": "829",
+                "AreaName": "湖內區",
+                "AreaEngName": "Hunei Dist."
+            },
+            {
+                "ZipCode": "830",
+                "AreaName": "鳳山區",
+                "AreaEngName": "Fengshan Dist."
+            },
+            {
+                "ZipCode": "831",
+                "AreaName": "大寮區",
+                "AreaEngName": "Daliao Dist."
+            },
+            {
+                "ZipCode": "832",
+                "AreaName": "林園區",
+                "AreaEngName": "Linyuan Dist."
+            },
+            {
+                "ZipCode": "833",
+                "AreaName": "鳥松區",
+                "AreaEngName": "Niaosong Dist."
+            },
+            {
+                "ZipCode": "840",
+                "AreaName": "大樹區",
+                "AreaEngName": "Dashu Dist."
+            },
+            {
+                "ZipCode": "842",
+                "AreaName": "旗山區",
+                "AreaEngName": "Qishan Dist."
+            },
+            {
+                "ZipCode": "843",
+                "AreaName": "美濃區",
+                "AreaEngName": "Meinong Dist."
+            },
+            {
+                "ZipCode": "844",
+                "AreaName": "六龜區",
+                "AreaEngName": "Liugui Dist."
+            },
+            {
+                "ZipCode": "845",
+                "AreaName": "內門區",
+                "AreaEngName": "Neimen Dist."
+            },
+            {
+                "ZipCode": "846",
+                "AreaName": "杉林區",
+                "AreaEngName": "Shanlin Dist."
+            },
+            {
+                "ZipCode": "847",
+                "AreaName": "甲仙區",
+                "AreaEngName": "Jiaxian Dist."
+            },
+            {
+                "ZipCode": "848",
+                "AreaName": "桃源區",
+                "AreaEngName": "Taoyuan Dist."
+            },
+            {
+                "ZipCode": "849",
+                "AreaName": "那瑪夏區",
+                "AreaEngName": "Namaxia Dist."
+            },
+            {
+                "ZipCode": "851",
+                "AreaName": "茂林區",
+                "AreaEngName": "Maolin Dist."
+            },
+            {
+                "ZipCode": "852",
+                "AreaName": "茄萣區",
+                "AreaEngName": "Qieding Dist."
+            }
+        ]
+    }

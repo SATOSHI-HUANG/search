@@ -28,12 +28,28 @@ export default {
         "https://data.kcg.gov.tw/api/action/datastore_search?resource_id=92290ee5-6e61-456f-80c0-249eae2fcc97"
     };
   },
+  computed: {
+    area() {
+      return this.$store.getters["area"];
+    }
+  },
   mounted() {
-    this.axios.get(this.api).then(response => {
-      let result = response.data.result;
-      this.total = result.total;
-      this.records = result.records;
-    });
+    this.fetchData();
+  },
+  methods: {
+    fetchData(area = "") {
+      let api = this.api + `&q=${area}`;
+      this.axios.get(api).then(response => {
+        let result = response.data.result;
+        this.total = result.total == undefined ? 0 : result.total;
+        this.records = result.records;
+      });
+    }
+  },
+  watch: {
+    area(val) {
+      this.fetchData(val);
+    }
   }
 };
 </script>

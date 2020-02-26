@@ -1,37 +1,8 @@
-<div class="wrap">
-    <div class="condition">
-        <input type="checkbox" id='loc'>
-        <div class="location">
-            <div>
-                <h2>Location</h2>
-                <label for="loc"></label>
-            </div>
-            <div>
-                <select>
-                    <option value="taiwan">Taiwan</option>
-                </select>
-            </div>
-        </div>
-        <input type="checkbox" id="time">
-        <div class="date">
-            <div>
-                <h2>Date</h2>
-                <label for="time"></label>
-            </div>
-            <div class="from">
-                <label>from</label>
-                <input type="date">
-            </div>
-            <div class="to">
-                <label>to</label>
-                <input type="date">
-            </div>
-        </div>
-    </div>
+<div>
     <div class="result_tag">
         <h2>Showing <p>{{ total }}</p> results by…</h2>
         <!-- <button>Koahsiung<i>×</i></button>
-        <button>Exhibition<i>×</i></button> -->
+            <button>Exhibition<i>×</i></button> -->
     </div>
     <section class="content" v-for='(record, index) in records' :key='record._id'>
         <div class="pic">

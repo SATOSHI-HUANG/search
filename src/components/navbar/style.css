@@ -54,9 +54,9 @@ header h1 {
         display: flex;
     }
 
-    .head header {
+    /* .head header {
         width: 39.1%;
-    }
+    } */
 
     .head .search {
         width: 60.9%;

@@ -1,132 +1,3 @@
-.wrap {
-    padding-bottom: 20px;
-}
-
-/*** condition  ***/
-
-.condition {
-    width: 100%;
-}
-
-.location, .date {
-    height: 36px;
-    position: relative;
-    padding-bottom: 20px;
-    background-color: #D7D7D7;
-    overflow: hidden;
-    transition: .3s;
-}
-
-.location::after,
-.date::after {
-    content: "";
-    width: 100%;
-    border: 1px solid #9B9B9B;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-#loc, #time {
-    opacity: 0;
-    position: absolute;
-}
-
-.location > div,
-.date > div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.location div,
-.location select {
-    width: 100%;
-}
-
-.location div,
-.date div {
-    padding: 0 9.7%;
-    box-sizing: border-box;
-}
-
-.location h2,
-.date h2 {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.location label,
-.date label {
-    position: relative;
-}
-
-.location label::before,
-.date label:last-child::before {
-    content: "";
-    width: 17px;
-    background: #9B9B9B;
-    border: 1px solid #9B9B9B;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.location label::after,
-.date label:last-child::after {
-    content: "";
-    width: 17px;
-    background: #9B9B9B;
-    border: 1px solid #9B9B9B;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: rotate(90deg);
-    transition: .3s;
-}
-
-.location select {
-    height: 40px;
-    border: none;
-    border-radius: 5px;
-    padding-left: 10px;
-}
-
-#loc:checked + .location,
-#time:checked + .date {
-    background-color: #EBEBEB;
-}
-
-#loc:checked + .location {
-    height: 96px;
-}
-
-#time:checked + .date {
-    height: 120px;
-}
-
-#loc:checked + .location label::after,
-#time:checked + .date label:last-child::after {
-    transform: rotate(180deg);
-}
-
-.from, .to {
-    display: flex;
-    flex-direction: row;
-}
-
-.from {
-    margin-bottom: 10px;
-}
-
-.from input, .to input {
-    height: 24px;
-    border: none;
-    border-radius: 2px;
-}
-
-/***  ***/
-
 .result_tag {
     display: none;
 }
@@ -213,28 +84,6 @@
 }
 
 @media screen and (min-width: 767px) {
-    .condition {
-        width: 39.1%;
-        float: left;
-    }
-
-    .location {
-        height: 96px;
-    }
-    
-    .date {
-        height: 120px;
-    }
-
-    .location, .date {
-        background-color:#EBEBEB;
-    }
-
-    .location label,
-    .date label:last-child {
-        display: none;
-    }
-
     .result_tag {
         display: block;
         width: 50.5%;
@@ -293,15 +142,6 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .wrap {
-        max-width: 1440px;
-        margin: auto;
-    }
-
-    .condition {
-        width: 25%;
-    }
-
     .result_tag, .content {
         width: 65%;
         margin: 10px 3.5%;
@@ -337,14 +177,5 @@
 
     .content .text {
         width: 81.7%;
-    }
-
-    .city_and_time {
-        display: flex;
-        flex-direction: row;        
-    }
-
-    .city_and_time .time {
-        margin-left: 20px;
     }
 }
