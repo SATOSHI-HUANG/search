@@ -44,6 +44,12 @@ export default {
         this.total = result.total == undefined ? 0 : result.total;
         this.records = result.records;
       });
+    },
+    gotoInside(index) {
+      this.$router.push({
+        name: "inside",
+        query: { id: this.records[index].Id }
+      });
     }
   },
   watch: {

@@ -1,5 +1,5 @@
 <template>
-  <div class="condition">
+  <div class="condition" v-if="isShow">
     <input type="checkbox" id="loc" />
     <div class="location">
       <div>
@@ -37,10 +37,14 @@ import Kaohsiung from "../../assets/Kaohsiung.json"; // eslint-disable-line no-u
 export default {
   data() {
     return {
-      areas: []
+      areas: [],
+      windowWidth: 0,
+      isShow: true
     };
   },
   mounted() {
+    window.addEventListener("resize", this.onResize);
+
     Kaohsiung.AreaList.forEach(element => {
       this.areas.push({
         zip: element.ZipCode,
@@ -51,7 +55,18 @@ export default {
   methods: {
     areaChange(event) {
       this.$store.commit("SET_AREA", event.target.value);
+    },
+    onResize() {
+      this.windowWidth = window.innerWidth;
     }
+  },
+  watch: {
+    windowWidth(val) {
+      this.isShow = this.$route.name != "inside" || val > 767;
+    }
+  },
+  destroyed() {
+    window.removeEventListener("resize", this.onResize);
   }
 };
 </script>

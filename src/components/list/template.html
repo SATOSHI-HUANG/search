@@ -1,10 +1,8 @@
 <div>
     <div class="result_tag">
         <h2>Showing <p>{{ total }}</p> results by…</h2>
-        <!-- <button>Koahsiung<i>×</i></button>
-            <button>Exhibition<i>×</i></button> -->
     </div>
-    <section class="content" v-for='(record, index) in records' :key='record._id'>
+    <section class="content" v-for='(record, index) in records' :key='record._id' @click="gotoInside(index)">
         <div class="pic">
             <img :src="record.Picture1">
         </div>
@@ -22,7 +20,7 @@
                 </div>
                 <div class="time">
                     <i class="fa fa-calendar" aria-hidden="true"></i>
-                    <p>{{ record.Changetime }}</p>
+                    <p>{{ record.Opentime }}</p>
                 </div>
             </div>
         </div>

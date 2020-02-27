@@ -5,6 +5,7 @@ header {
     height: 69px;
     background-color: #7828B4;
     display: flex;
+    cursor: pointer;
 }
 
 header h1 {

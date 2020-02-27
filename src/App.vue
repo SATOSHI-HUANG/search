@@ -3,7 +3,7 @@
     <navbar></navbar>
     <div class="wrap">
       <side></side>
-      <search></search>
+      <router-view />
     </div>
   </div>
 </template>
@@ -11,14 +11,12 @@
 <script>
 import Navbar from "./components/navbar/index.vue";
 import Side from "./components/side/index.vue";
-import Search from "./components/search/index.vue";
 
 export default {
   name: "App",
   components: {
     Navbar,
-    Side,
-    Search
+    Side
   }
 };
 </script>
@@ -27,7 +25,7 @@ export default {
 html,
 body {
   width: 100%;
-  height: 100%;
+  height: auto;
   margin: 0;
   padding: 0;
   background: #f2f2f2;

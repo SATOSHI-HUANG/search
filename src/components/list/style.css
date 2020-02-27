@@ -4,7 +4,7 @@
 
 .content {
     width: 80.7%;
-    margin: 0 9.7%;
+    margin: 0 9.7% 20px;
     background-color: #fff;
     cursor: pointer;
 }
@@ -24,6 +24,7 @@
     padding: 0 30px 20px;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 .text .title {
