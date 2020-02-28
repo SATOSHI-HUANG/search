@@ -10,9 +10,14 @@ Router.prototype.push = function push(location) {
   return originalPush.call(this, location).catch(err => err);
 };
 
-export default new Router({
+
+const router = new Router({
     mode: 'history',
     routes:[
+        {
+            path: '',
+            redirect: '/search'
+        },
         {
             path: '/search',
             name: 'list',
@@ -25,3 +30,5 @@ export default new Router({
         }
     ]
 })
+
+export default router;

@@ -2,6 +2,7 @@
 export default {
   methods: {
     gotoHome() {
+      if (this.$route.name == "list") return;
       this.$router.push({ path: "/search" });
     }
   }
