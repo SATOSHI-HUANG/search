@@ -2,7 +2,7 @@
 export default {
   methods: {
     gotoHome() {
-      this.$router.push({ path: "/" });
+      this.$router.push({ path: "/search" });
     }
   }
 };
