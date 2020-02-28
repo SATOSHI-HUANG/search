@@ -17,6 +17,9 @@ export default {
   components: {
     Navbar,
     Side
+  },
+  mounted() {
+    this.$store.dispatch("INIT_SELECT_AREA");
   }
 };
 </script>

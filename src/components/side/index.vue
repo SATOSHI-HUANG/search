@@ -8,7 +8,7 @@
       </div>
       <div>
         <select @change="areaChange($event)">
-          <option value>全部</option>
+          <option value="all">全部</option>
           <option v-for="area in areas" :key="area.zip" :value="area.name">{{ area.name }}</option>
         </select>
       </div>

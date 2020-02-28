@@ -143,9 +143,14 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .result_tag, .content {
+    .list {
         width: 65%;
         margin: 10px 3.5%;
+        float: left;
+    }
+    .result_tag, .content {
+        width: 100%;
+        margin: 10px auto;
     }
 
     .result_tag button:hover,

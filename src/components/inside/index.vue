@@ -123,7 +123,7 @@ export default {
 @media screen and (min-width: 767px) {
   .inside {
     width: 50.5%;
-    margin: 0 5.2%;
+    margin: 0 5.2% 20px;
     float: left;
   }
 

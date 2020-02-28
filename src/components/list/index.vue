@@ -1,5 +1,10 @@
 <script>
+import Pages from "../pages/index.vue";
+
 export default {
+  components: {
+    Pages
+  },
   data() {
     return {
       records: [],
@@ -24,6 +29,8 @@ export default {
         "18": "其他"
       },
       total: 0,
+      limit: 10,
+      currentPage: 1,
       api:
         "https://data.kcg.gov.tw/api/action/datastore_search?resource_id=92290ee5-6e61-456f-80c0-249eae2fcc97"
     };
@@ -34,15 +41,31 @@ export default {
     }
   },
   mounted() {
-    this.fetchData();
+    let query = this.$route.query;
+    let _area = query["area"] == undefined ? "all" : query["area"];
+    this.currentPage = query["page"] == undefined ? 1 : parseInt(query["page"]);
+    let _offset = (this.currentPage - 1) * this.limit;
+
+    this.fetchData(_area, this.limit, _offset);
   },
   methods: {
-    fetchData(area = "") {
-      let api = this.api + `&q=${area}`;
+    fetchData(area = "", limit = 10, offset = 0) {
+      let _area = area == "all" ? "" : area;
+
+      let api = this.api + `&q=${_area}&limit=${limit}&offset=${offset}`;
       this.axios.get(api).then(response => {
         let result = response.data.result;
         this.total = result.total == undefined ? 0 : result.total;
         this.records = result.records;
+
+        let path = this.$router.history.current.path;
+        this.$router.push({
+          path,
+          query: {
+            area: area,
+            page: this.currentPage
+          }
+        });
       });
     },
     gotoInside(index) {
@@ -50,11 +73,17 @@ export default {
         name: "inside",
         query: { id: this.records[index].Id }
       });
+    },
+    changePage(val) {
+      let offset = (val - 1) * this.limit;
+      this.fetchData(this.area, this.limit, offset);
+
+      this.currentPage = val;
     }
   },
   watch: {
     area(val) {
-      this.fetchData(val);
+      this.fetchData(val, this.limit);
     }
   }
 };

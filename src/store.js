@@ -17,5 +17,10 @@ export default new Vuex.Store({
         SET_AREA(state, area) {
             state.selectArea = area
         }
+    },
+    actions: {
+        INIT_SELECT_AREA({ commit }) {
+            commit('SET_AREA', 'all')
+        }
     }
 })
